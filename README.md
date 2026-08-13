@@ -4,9 +4,9 @@ PolkaDot is a training-based low-pass whole genome sequencing algorithm (LP-WGS)
 **Rationale:** PolkaDot enables the mapping and quantitation of genomic instability regardless of available quantity (i.e., picograms to micrograms). Because GII is a continuous metric, rather than categorical, results can be compared within (i.e., serial samples) and between individuals.
 
 ## Software Requirements
-FGBIO (https://github.com/fulcrumgenomics/fgbio)
-SAMTOOLS (https://www.htslib.org/)
-PYTHON3
+- FGBIO (https://github.com/fulcrumgenomics/fgbio)
+- SAMTOOLS (https://www.htslib.org/)
+- PYTHON3
 
 ## NGS DATA
-PolkaDot was written for short-read Illumina data. The provided scripts use paired-end FASTQ (151x151) files generated from PCR-amplified libraries using dual index, dual unique molecular identifiers (UMIs) obtained from IDT. 
+PolkaDot was written for short-read Illumina data. The provided scripts use paired-end FASTQ (151x151) files generated from PCR-amplified libraries using adapters with dual index, dual unique molecular identifiers (UMIs; 3mers) obtained from IDT. 
