@@ -1,2 +1,3 @@
 # PolkaDot
-PolkaDot is a training-based low-pass whole genome sequencing algorithm (LP-WGS) that produces genome-wide plots of copy number alterations and quantifies genomic instability.
+PolkaDot is a training-based low-pass whole genome sequencing algorithm (LP-WGS) that produces genome-wide plots (PolkaDot plots) of copy number variations and quantifies genomic instability (GII = genomic instability index). The name 'PolkaDot' is an homage to the pink polkadot jersey worn by the king of the mountain during the Tour de France since the plots are reminiscent of mountainous terrain.
+<img width="1352" height="181" alt="Screenshot 2026-08-13 at 4 07 46 PM" src="https://github.com/user-attachments/assets/b3994302-00e0-4735-8c6e-07c73ebff6c4" />
