@@ -9,7 +9,9 @@ PolkaDot is a training-based low-pass whole genome sequencing algorithm (LP-WGS;
 - PYTHON3
 
 ## NGS Data
-PolkaDot was written for short-read Illumina data. The provided scripts use paired-end FASTQ (151x151) files generated from PCR-amplified libraries using adapters with dual index, dual unique molecular identifiers (UMIs; 3mers) obtained from IDT. 
+PolkaDot was written for short-read Illumina data. The provided scripts use paired-end FASTQ (151x151) files generated from PCR-amplified libraries using adapters with dual index, dual unique molecular identifiers (UMIs; 3mers) obtained from IDT.  
+  
+The dataset must include DNA from young, healthy controls to model region-specific mapping governed by the workflow and sample type used to generate the FASTQ files. The number of samples to include in the training set is undefined, but more is better (e.g., >10). The training samples should be of the same type as the testing samples. For example, do not use buffy DNA to model cell-free DNA, do not use enzymatically sheared DNA to model mechanically sheared DNA, etc. All samples should derived from the same NGS workflow (i.e., library prep) and sequencer.
 
 ## Use Instructions
 1. Generate MPILEUP from deduplicated BAM files using FASTQ files trimmed to 30 million total paired reads. The attached script uses FGBIO to generate singleton collapsed consensus sequences. However, a standard deduplication tool (e.g., PICARD, removeduplicates) may works similarly as well.
