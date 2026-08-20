@@ -18,4 +18,5 @@ The dataset must include DNA from young, healthy controls to model region-specif
 
 ## Use Instructions
 1. Generate MPILEUP from deduplicated BAM files using FASTQ files trimmed to 30 million total paired reads. "callSingletonConsensus_30millionTPR.sh" is a bash script that uses FGBIO to generate singleton (not duplex) collapsed consensus sequences. However, a standard deduplication tool (e.g., PICARD, MarkDuplicates) may work similarly as well.
-2. 
+2. Use "meanDepth_regionBased_1Mbp.py" to calculate for each training sample the average read depth for each region consisting of 1 million consecutive base pairs excluding locations defined by "hg38-blacklistCentroTelo.bed" - locations of telomeres, centromeres, and the ENCODE blacklist to exclude anomalous, unstructured, or high signal regions.
+
