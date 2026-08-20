@@ -16,5 +16,5 @@ PolkaDot was written for short-read Illumina data. The provided scripts use pair
 The dataset must include DNA from young, healthy controls to model region-specific mapping governed by the workflow and sample type used to generate the FASTQ files. The number of samples to include in the training set is undefined, but more is better (e.g., >10). The training samples should be of the same type as the testing samples. For example, do not use buffy DNA to model cell-free DNA, do not use enzymatically sheared DNA to model mechanically sheared DNA, etc. All samples should derive from the same NGS workflow (i.e., library prep) and sequencer.
 
 ## Use Instructions
-1. Generate MPILEUP from deduplicated BAM files using FASTQ files trimmed to 30 million total paired reads. The attached script uses FGBIO to generate singleton (not duplex) collapsed consensus sequences. However, a standard deduplication tool (e.g., PICARD, MarkDuplicates) may work similarly as well.
+1. Generate MPILEUP from deduplicated BAM files using FASTQ files trimmed to 30 million total paired reads. "callSingletonConsensus_30millionTPR.sh" is bash script that uses FGBIO to generate singleton (not duplex) collapsed consensus sequences. However, a standard deduplication tool (e.g., PICARD, MarkDuplicates) may work similarly as well.
 2. 
