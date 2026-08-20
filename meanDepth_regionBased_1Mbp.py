@@ -11,7 +11,7 @@ inDir = '/path/to/mpile/'
 ## Location to output files
 outDir = '/path/to/regionData/'
 
-## List of files to process
+## List of training files to process
 mpile = ['12345X1', '12345X2', '12345X3']
 
 ## Region size is 1 million bp
@@ -20,7 +20,7 @@ regSize = 1000000
 wgRegCounter = 0 # to follow the number of regSize regions being analyzed across the entire genome
 wgRegCounterStart = 1
 chrom = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','X']
-with open(outDir+'regionDepths.tsv','w') as dataOut, open(outDir+'regionLocations.tsv','w') as regionsOut:
+with open(outDir+'training_regionDepths.tsv','w') as dataOut, open(outDir+'training_regionLocations.tsv','w') as regionsOut:
 	for ch in chrom:
 		controlRegionDepths = dict() # dictionary the uses wgRegCounter as a key to save depths from each region from all samples
 
